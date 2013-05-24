@@ -1,0 +1,18 @@
+{
+  "name": "ninja-openurl",
+  "version": "0.0.0",
+  "description": "A ninja block driver to open a url.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elliots/ninja-openurl.git"
+  },
+  "author": "Elliot Shepherd",
+  "license": "MIT",
+  "dependencies": {
+    "openurl":"1.1.0"
+  }
+}
