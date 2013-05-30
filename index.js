@@ -25,9 +25,6 @@ function Device(app) {
   this.G = 'openurl';
   this.name = "Open URL";
 
-  setTimeout(function() {
-    self.emit('data', 1);
-  }, 1);
 }
 
 Device.prototype.write = function(url) {
