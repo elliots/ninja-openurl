@@ -9,24 +9,30 @@ function Driver(opts,app) {
   var self = this;
 
   app.on('client::up',function(){
-    self.emit('register', new Device());
+    self.emit('register', new Device(app));
   });
 
 }
 
-function Device() {
+function Device(app) {
   var self = this;
 
+  this._app = app;
   this.writeable = true;
   this.readable = true;
   this.V = 0;
-  this.D = 240; // display_text
+  this.D = 240; // display_text, should be a new one?
   this.G = 'openurl';
+  this.name = "Open URL";
+
   setTimeout(function() {
     self.emit('data', 1);
   }, 1);
 }
 
-Device.prototype.write = openurl.open;
+Device.prototype.write = function(url) {
+  openurl.open(url);
+  this._app.log.info('Opening URL', url);
+};
 
 module.exports = Driver;
