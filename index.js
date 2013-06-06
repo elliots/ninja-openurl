@@ -23,7 +23,7 @@ function Device(app) {
   this.V = 0;
   this.D = 240; // display_text, should be a new one?
   this.G = 'openurl';
-  this.name = "Open URL";
+  this.name = 'Open URL - ' + require('os').hostname();
 
 }
 
