@@ -13,6 +13,6 @@
   "author": "Elliot Shepherd",
   "license": "MIT",
   "dependencies": {
-    "openurl":"1.1.0"
+    "openurl": "git://github.com/jmc-88/openurl.git#bf6db1c"
   }
 }
