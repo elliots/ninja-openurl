@@ -7,6 +7,8 @@ Simply opens the provided url.
 
 Useful to pop up a browser, jump to a spotify playlist or track, app store link etc. etc.
 
+Example: spotify:track:6JEK0CvvjDjjMUBFoXShNZ
+
 ## License
 
 Copyright (C) 2013 Ninja Blocks Inc
